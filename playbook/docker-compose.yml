@@ -1,0 +1,15 @@
+version: "2"
+services:
+  redis-server:
+    image: redis
+    networks:
+      - "word-count-app-network"
+  word-count-server:
+    build: ../
+    ports:
+      - 8080:8080
+    networks:
+      - "word-count-app-network"
+networks:
+  word-count-app-network:
+    external: false
