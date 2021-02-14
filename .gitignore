@@ -1,4 +1,5 @@
-target/
+target/*/
+target/*.jar.original
 pom.xml.tag
 pom.xml.releaseBackup
 pom.xml.versionsBackup
